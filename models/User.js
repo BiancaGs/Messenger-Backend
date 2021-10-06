@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 // Create Schema
 const userSchema = new Schema({
     name: { type: String, required: true},
-    username: { type: Array, required: true },
+    username: { type: String, required: true },
     joined_at: { type: Date, default: Date.now }
 });
 
