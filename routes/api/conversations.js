@@ -18,4 +18,12 @@ router.route('/:id')
 router.route('/:id/new-message')
     .post(ConversationController.newMessage);
 
+/**
+ * @route   POST /api/conversations
+ * @desc    Creates a new conversation
+ * @access  PUBLIC
+ */
+router.route('/')
+    .post(ConversationController.newConversation);
+
 module.exports = router;
